@@ -10,7 +10,7 @@ FROM ubuntu:20.04@sha256:3246518d9735254519e1b2ff35f95686e4a5011c90c85344c1f38df
 ARG RISC0_TOOLCHAIN_VERSION=r0.1.81.0
 
 RUN apt-get update
-RUN apt-get install -y --no-install-recommends ca-certificates clang curl libssl-dev pkg-config build-essential net-tools iptables iproute2 wget
+RUN apt-get install -y --no-install-recommends ca-certificates clang curl libssl-dev pkg-config build-essential libc6 net-tools iptables iproute2 wget
 RUN curl --proto '=https' --tlsv1.2 --retry 10 --retry-connrefused -fsSL 'https://sh.rustup.rs' | sh -s -- -y
 ENV PATH="/root/.cargo/bin:${PATH}"
 RUN cargo install cargo-binstall
