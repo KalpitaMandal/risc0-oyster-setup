@@ -56,5 +56,7 @@ COPY secp.pub ./
 COPY kalypso-attestation-prover ./
 RUN chmod +x kalypso-attestation-prover
 
+RUN kalypso-attestation-prover
+
 # entry point
 ENTRYPOINT [ "/app/setup.sh" ]
