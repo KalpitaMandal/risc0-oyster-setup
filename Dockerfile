@@ -56,6 +56,8 @@ COPY secp.pub ./
 COPY kalypso-attestation-prover ./
 RUN chmod +x kalypso-attestation-prover
 
+RUN ls app
+
 RUN /app/kalypso-attestation-prover
 
 # entry point
