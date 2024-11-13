@@ -18,6 +18,7 @@ iptables -L -t nat
 #/app/oyster-keygen --secret /app/secp.sec --public /app/secp.pub
 
 # ls app
+./app/kalypso-attestation-prover
 
 # starting supervisord
 /app/supervisord
