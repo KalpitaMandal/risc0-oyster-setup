@@ -17,7 +17,10 @@ iptables -L -t nat
 #/app/keygen --secret /app/id.sec --public /app/id.pub
 #/app/oyster-keygen --secret /app/secp.sec --public /app/secp.pub
 
-ls app
+# run prover here to check
+/app/kalypso-attestation-prover
+
+# ls app
 
 # starting supervisord
 /app/supervisord
